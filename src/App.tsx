@@ -251,14 +251,6 @@ export default function App() {
   const startLiveSession = async () => {
     if (isLiveActive) return;
     
-    if (!process.env.GEMINI_API_KEY) {
-      setMessages(prev => [...prev, { 
-        role: 'assistant', 
-        content: "Error: Gemini API Key is missing. Please add `GEMINI_API_KEY` in Settings -> Secrets." 
-      }]);
-      return;
-    }
-
     setLiveStatus('connecting');
     setIsLiveActive(true);
     setIsVoiceMode(true);
@@ -434,7 +426,7 @@ export default function App() {
             setLiveStatus('error');
             setMessages(prev => [...prev, { 
               role: 'assistant', 
-              content: "Voice Agent Error: Connection failed. Please check your API key and network." 
+              content: "Voice Agent Error: Connection failed. Please check your network connection." 
             }]);
             stopLiveSession();
           }
