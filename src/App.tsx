@@ -517,8 +517,13 @@ export default function App() {
       {/* Header */}
       <header className="flex items-center justify-between hardware-card p-4 md:p-4 rounded-none md:rounded-2xl shrink-0 border-b md:border border-zinc-200 bg-white/80 backdrop-blur-md z-20">
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-zinc-900 flex items-center justify-center shadow-sm">
-            <Cpu className="text-white w-6 h-6" />
+          <div className="w-12 h-12 rounded-xl bg-zinc-900 flex items-center justify-center shadow-sm overflow-hidden">
+            <img 
+              src="https://i.postimg.cc/FH91BXdh/unnamed-removebg-preview.png" 
+              alt="Autovex Logo" 
+              className="w-10 h-10 object-contain"
+              referrerPolicy="no-referrer"
+            />
           </div>
           <div>
             <h1 className="text-lg font-bold tracking-tight text-zinc-900">Autovex Expert</h1>
@@ -569,8 +574,13 @@ export default function App() {
         <div className="flex-1 overflow-y-auto p-4 md:p-6 space-y-6 md:space-y-8 custom-scrollbar">
           {messages.length === 0 && !isLiveActive && (
             <div className="h-full flex flex-col items-center justify-center text-center p-6 md:p-12 space-y-8">
-              <div className="w-24 h-24 rounded-3xl bg-zinc-50 flex items-center justify-center border border-zinc-100 shadow-inner">
-                <Terminal className="text-zinc-900 w-12 h-12" />
+              <div className="w-24 h-24 rounded-3xl bg-zinc-50 flex items-center justify-center border border-zinc-100 shadow-inner overflow-hidden">
+                <img 
+                  src="https://i.postimg.cc/FH91BXdh/unnamed-removebg-preview.png" 
+                  alt="Autovex Logo Large" 
+                  className="w-16 h-16 object-contain"
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <div className="space-y-3">
                 <h2 className="text-3xl font-black text-zinc-900 tracking-tight">
