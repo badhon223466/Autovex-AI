@@ -1,0 +1,8 @@
+{
+  "name": "Autovex Automation Expert AI",
+  "description": "Professional mentor for Industrial Automation (PLC, HMI, VFD, Wiring) with multimodal analysis capabilities.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
